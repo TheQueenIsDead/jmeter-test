@@ -64,11 +64,28 @@ Tidying up ...    @ Thu Jul 29 20:56:18 NZST 2021 (1627548978731)
 C:\Users\David\PycharmProjects\jmeter-test>
 ```
 
-As we can see, flask does pretty well when hammered with 3000 requests per second without load balancing.
+As we can see, flask falls over when hammered with 3000 requests per second without load balancing.
 
 Thank you for coming to my TED talk.
 
 ![Test Run](./assets/Capture.JPG)
+
+
+### Reporting
+
+https://jmeter.apache.org/usermanual/generating-dashboard.html#report
+
+To generate a report when running the load test, use the following:
+
+```cmd
+jmeter\bin\jmeter -n -t "test.jmx" -l "test.log" -e -o "report"
+```
+
+And to generate a report after the fact
+
+```cmd
+jmeter -g <log file> -o <Path to output folder>
+```
 
 ## Advanced References
 
