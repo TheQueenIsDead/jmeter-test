@@ -1,0 +1,16 @@
+#/jmeter/docs/
+#/jmeter/extras/
+#/jmeter/lib/
+#/jmeter/LICENSE
+#/jmeter/backups/
+#/jmeter/README.md
+#/jmeter/printable_docs/
+#/jmeter/licenses/
+#/jmeter/bin/
+#/jmeter/NOTICE
+jmeter/*
+!jmeter/.gitkeep
+venv
+.idea
+*.log
+*.jtl
